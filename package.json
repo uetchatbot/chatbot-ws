@@ -1,0 +1,27 @@
+{
+  "name": "uetchatbot-ws",
+  "version": "1.0.0",
+  "description": "uetchatbot-ws",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "private": false
+  },
+  "dependencies": {
+    "async": "^2.0.1",
+    "bcrypt": "^1.0.2",
+    "bookshelf": "^0.10.0",
+    "boom": "^3.2.2",
+    "dotenv": "^2.0.0",
+    "hapi": "^14.0.0",
+    "knex": "^0.13.0",
+    "lodash": "^4.14.0",
+    "mysql": "^2.11.1",
+    "node-schedule": "^1.1.1",
+    "request": "^2.74.0"
+  }
+}
