@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "uetchatbot-ws",
   "scripts": {
+    "database": "knex migrate:latest",
     "prestart": "npm install",
     "start": "node index.js"
   },
@@ -23,5 +24,8 @@
     "mysql": "^2.11.1",
     "node-schedule": "^1.1.1",
     "request": "^2.74.0"
+  },
+  "devDependencies": {
+    "knex": "^0.13.0"
   }
 }
