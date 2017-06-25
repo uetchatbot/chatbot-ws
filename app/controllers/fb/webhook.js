@@ -8,6 +8,8 @@ const Joi = require('joi');
 const ResponseJSON = global.helpers.ResponseJSON;
 const service = require('../../services');
 
+let WEBHOOK_TOKEN = config('WEBHOOK_TOKEN') || '';
+
 /**
  * [GET] /webhook/?hub.challenge=<facebook-token>&hub.verify_token=uetchatbotws
  * @type {{handler: exports.verifyWebhook.handler}}
@@ -21,7 +23,11 @@ module.exports.verifyWebhook = {
             return rep(Boom.badData('params is undefined!'));
         }
 
-        return rep(params['hub.challenge']);
+        if (_.eq(params['hub.challenge'], WEBHOOK_TOKEN)) {
+            return rep(params['hub.challenge']);
+        }
+
+        return rep(Boom.badData('wrong token'));
     }
 };
 
