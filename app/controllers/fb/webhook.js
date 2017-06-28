@@ -23,7 +23,7 @@ module.exports.verifyWebhook = {
             return rep(Boom.badData('params is undefined!'));
         }
 
-        if (_.eq(params['hub.challenge'], WEBHOOK_TOKEN)) {
+        if (_.eq(params['hub.verify_token'], WEBHOOK_TOKEN)) {
             return rep(params['hub.challenge']);
         }
 
