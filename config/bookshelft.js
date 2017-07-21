@@ -1,3 +1,5 @@
+'use strict';
+
 const config = global.helpers.config;
 
 let knex = require('knex')({
