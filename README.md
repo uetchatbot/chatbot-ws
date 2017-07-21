@@ -21,7 +21,7 @@ Làm theo các bước như ở [đây](https://developers.facebook.com/docs/mes
 3. Chạy `npm run database` để tạo metadata cho database
 4. Chạy `npm start` để khởi động App Chatbot
 
-### Cấu hình Webhook
+### Cấu hình Facebook Webhook
 Thực hiện bước *Setup a Webhook* còn dở ở trên
    * **Callback URL** là url tới webhook của bạn
    * **Verify Token** là webhook token bạn đã cấu hình ở Server
