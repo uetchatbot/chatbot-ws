@@ -18,8 +18,9 @@ Làm theo các bước như ở [đây](https://developers.facebook.com/docs/mes
     * **DB_PASSWORD** mật khẩu người dùng
     * **WEBHOOK_TOKEN** webhook token của bạn (để Facebook xác nhận webhook)
     * **PAGE_ACCESS_TOKEN** page token bạn lấy được ở bước Cấu hình Facebook
+3. Cài pm2 (npm install -g pm2)
 3. Chạy `npm run database` để tạo metadata cho database
-4. Chạy `npm start` để khởi động App Chatbot
+4. Chạy `pm2 start ecosystem.config.js` để khởi động App Chatbot
 
 ### Cấu hình Facebook Webhook
 Thực hiện bước *Setup a Webhook* còn dở ở trên
