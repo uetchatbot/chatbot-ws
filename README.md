@@ -1,7 +1,7 @@
 # API for UETChatbot
 
 ### Yêu cầu
-* VPS cài sẵn MySQL server, NodeJS
+* VPS cài sẵn MySQL server, NodeJS phiên bản >= 8.x.x
 * Chứng thư số SSL cho địa chỉ IP của VPS. *Lưu ý: Có thể dùng SSL cho tên miền riêng, và cần trỏ tên miền về địa chỉ IP VPS*
 * Facebook Page (nơi đặt trụ sở Chatbot :P)
 
